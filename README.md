@@ -6,7 +6,7 @@ This project is a CPU scheduling simulator that allows users to simulate differe
 
 ## How to Run the Project
 To run the project, follow these steps:
-1. Clone the repository: `git clone https://github.com/yourusername/cpu-scheduling-simulator.git`
+1. Clone the repository: `git clone https://github.com/tapan111/cpu_scheduling.git`
 2. Compile the code: `g++ -o scheduler scheduler.cpp`
 3. Run the executable: `./scheduler input.txt output.txt`
 
