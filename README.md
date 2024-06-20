@@ -18,11 +18,54 @@ To run the project, follow these steps:
 - **Output:** Output average waiting time and turnaround time.
 ![image](https://github.com/tapan111/cpu_scheduling/assets/99003457/5f130f94-697f-4166-bd8b-0888896f4400)
 
+## Function Explanation
+
+1. **Sorting Processes:**
+   - The function begins by sorting the processes based on their arrival times to ensure they are scheduled in the order they arrive.
+
+2. **Initializing Variables:**
+   - A list is created to store the execution order, including start and end times.
+   - The current time is initialized to 0.
+
+3. **Scheduling Each Process:**
+   - For each process, if the current time is less than the process's arrival time, the current time is updated to the process's arrival time (simulating idle CPU time).
+   - The waiting time for each process is calculated as the difference between the current time and the arrival time.
+   - The execution details (process ID, start time, end time) are recorded, and the current time is updated after the process's burst time (execution duration).
+
+4. **Calculating Metrics and Writing Results:**
+   - The function calculates the waiting and turnaround times for each process.
+   - It writes the scheduling results, including the average waiting time, average turnaround time, and a Gantt chart (visual representation of the process execution order), to the output file.
+
 ### SJF (Shortest Job First)
 - **Arrival:** Sort processes by arrival time.
 - **Execution:** Select the process with the shortest burst time among the arrived processes.
 - **Completion:** Calculate waiting time and turnaround time for each process.
 - **Output:** Output average waiting time and turnaround time.
+- ![image](https://github.com/tapan111/cpu_scheduling/assets/99003457/ade17460-6465-4826-b014-48636b9f4964)
+## Function Explanation
+
+1. **Sorting Processes by Arrival Time:**
+   - The function starts by sorting the processes based on their arrival times to determine the order of arrival.
+
+2. **Initializing Variables:**
+   - `executions` is a list to store the execution order with start and end times.
+   - `ready_queue` holds processes that are ready to be executed.
+   - `curr_time` tracks the current time in the scheduling simulation.
+   - `idx` and `n` are used to iterate through the processes.
+
+3. **Scheduling Each Process:**
+   - The main loop continues until all processes are scheduled.
+   - Processes that have arrived by the current time are added to the `ready_queue`.
+   - If the `ready_queue` is empty, the current time is updated to the next process's arrival time.
+   - The `ready_queue` is sorted by burst time to select the process with the shortest burst time.
+   - The selected process is executed, and its waiting time is calculated as the difference between the current time and its arrival time.
+   - Execution details (process ID, start time, end time) are recorded, and the current time is updated after execution.
+   - The waiting and turnaround times are updated for each process.
+
+4. **Calculating Metrics and Writing Results:**
+   - The function calculates the waiting and turnaround times for each process.
+   - It writes the scheduling results, including the average waiting time, average turnaround time, and a Gantt chart (visual representation of the process execution order), to the output file.
+
 
 ### SRTF (Shortest Remaining Time First)
 - **Arrival:** Sort processes by arrival time.
