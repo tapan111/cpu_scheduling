@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.1)
+project(mycppcmsapp)
+find_package(cppcms REQUIRED)
+add_executable(mycppcmsapp main.cpp)
+target_link_libraries(mycppcmsapp cppcms)
