@@ -16,6 +16,7 @@ To run the project, follow these steps:
 - **Execution:** Execute processes in the order they arrive.
 - **Completion:** Calculate waiting time and turnaround time for each process.
 - **Output:** Output average waiting time and turnaround time.
+![image](https://github.com/tapan111/cpu_scheduling/assets/99003457/5f130f94-697f-4166-bd8b-0888896f4400)
 
 ### SJF (Shortest Job First)
 - **Arrival:** Sort processes by arrival time.
